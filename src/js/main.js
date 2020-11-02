@@ -9,6 +9,7 @@ import { warnFacebookBrowserUserIfNecessary } from './facebook-util'
 import { addVersion } from './util'
 import { createForm } from './form'
 import { rememberFields, beautifyLabels } from './monkeypatch'
+import { checkOrigin } from './check-origin'
 
 warnFacebookBrowserUserIfNecessary()
 createForm()
@@ -17,3 +18,5 @@ addVersion(process.env.VERSION)
 
 rememberFields()
 beautifyLabels()
+
+checkOrigin()

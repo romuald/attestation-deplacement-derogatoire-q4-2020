@@ -30,12 +30,6 @@
 </head>
 <body>
     <header role="banner" class="wrapper">
-        <picture>
-            <source srcset="/MIN_Interieur_RVB_dark.svg" media="(prefers-color-scheme: dark)">
-            <img src="/MIN_Interieur_RVB.svg" alt="Ministère de l'intérieur. Liberté, égalité, fraternité."
-                class="logo" role="presentation" aria-hidden="true">
-        </picture>
-
         <div>
             <h1 class="flex flex-wrap">
                 <span class="covid-title">
@@ -58,6 +52,23 @@
             role="alert"
             id="alert-facebook"
         ></p>
+        <p class="alert alert-info" role="alert">
+            <!-- <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+            <span>
+            Ce site est un "fork" non-officiel du site de génération de l'attestation dérogatoire.
+            <br>
+            Son principal but est de sauvegarder vos coordonnées dans votre navigateur pour éviter des les remplir à chaque visite.
+            <br>Il tente également de rendre plus lisibles les différents motifs à sélectioner lors des sorties
+            </span>
+        </p>
+
+        <p id="alert-outdated" class="alert alert-warning d-none" role="alert">
+            <strong>Attention</strong> cette version n'est actuellement <strong>pas à jour</strong>
+            par rapport à la <a href="https://media.interieur.gouv.fr/deplacement-covid-19/">version officielle</a>
+            (<a href="https://github.com/LAB-MI/attestation-deplacement-derogatoire-q4-2020/">code source</a>).
+            <br>
+            Ça n'est probablement pas grand chose, mais il est possible que certains changement soient significatifs
+        </p>
 
         <div class="wrapper">
             <form id="form-profile" accept-charset="UTF-8"></form>
@@ -82,7 +93,7 @@
             </p>
         </div>
         <p class="github">
-            Le code source de ce service est consultable sur <a href="https://github.com/LAB-MI/attestation-deplacement-derogatoire-q4-2020" class="github-link">GitHub</a>.
+            Le code source de ce service est consultable sur <a href="https://github.com/romuald/attestation-deplacement-derogatoire-q4-2020" class="github-link">GitHub</a>.
         </p>
         <p class="label-mi">
             Ministère de l'Intérieur - DNUM - SDIT
